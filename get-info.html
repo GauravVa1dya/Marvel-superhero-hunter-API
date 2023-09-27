@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" id="root" color-scheme="light">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Adding Favicon -->
+     <link rel="shortcut icon" href="./Images/marvel-favicon.ico" type="image/x-icon">
+     <!-- Title of page -->
+     <title id="page-title">Details | Marvel&#174 Superhero Hunter</title>
+     <!-- Linking Fontawesome -->
+          <script src="https://kit.fontawesome.com/1eef170505.js" crossorigin="anonymous"></script>
+     <!-- Custom Stylesheet -->
+     <link rel="stylesheet" href="./CSS/styles.css">
+     <link rel="stylesheet" href="./CSS/get-info.css">
+</head>
+<body class="flex-col cont">
+     <!-- Background Image -->
+     <img class="bg-img" src="./Images/marvel_doctor_strange.jpg" alt="background_image_marvel">
+     <!-- Navigation bar -->
+     <nav class="flex-row navbar">
+            <!-- Brand logo and Name -->
+      <div class="flex-row navbar-brand">
+          <img class="logo pointer" src="./Images/marvel_final_logo.png" alt="" />
+          <a href="./index.html">
+            <font color="red"><span><b>Marvel<sup>&#174</sup></font> Superhero Hunter</b></span>
+          </a>
+        </div>
+          <!-- Home Button and View Favourites Button -->
+          <div class="flex-row favAndTheme-btn">
+               <a class="flex-row link-to-different-page" href="./fav-list.html">
+                    <button class="btn fav-btn pointer">
+                         <i class="fa-solid fa-heart fa-beat fa-xl fav-icon" style="color: #ff0000;"></i> &nbsp; <b>View Favourites</b>
+                    </button>
+               </a>
+               <a class="flex-row link-to-different-page" href="./index.html">
+                    <button class="btn fav-btn pointer"> <i class="fa-solid fa-house-chimney fa-beat-fade fa-xl" style="color: #00ff40;"></i> &nbsp; Home</button>
+               </a>
+          </div>
+     </nav>
+     <!-- Information Container -->
+     <div class="flex-row info">
+          <section class="flex-col" id="info-container">
+               <!-- DOM Manipulated HTML Code goes here..... -->
+          </section>
+     </div>
+     <div class="fixed-bottom footer">
+          <!-- Footer -->
+          <footer class="text-center text-lg-start text-dark" style="background-color: transparent">
+            <!-- Copyright -->
+            <div class="text-center p-1 text-white">
+               <b>Data provided by <font color="red">Marvel<sup>&#174</sup></font></b>
+               <a class="text-white footer-text" href="https://www.marvel.com/"><font color="white"><b> © 2023 <font color="red">Marvel<sup>&#174</sup></font></b></font></a>
+            </div>
+          </footer>
+          <img class="fixed-image" src="./Images/PngItem_683688.png" alt="Image" width="100" height="90">
+        </div>
+     <!-- Popups for notifying user that superhero is added or removed from favourites -->
+     <span data-visiblity="hide" class="fav-toast"><i class="fa-solid fa-circle-check fa-beat fa-xl" style="color: #00ff04;"></i>&nbsp;&nbsp;Superhero <font color="green"><b>Added</b></font> To &nbsp;<i class="fa-solid fa-heart fa-beat fa-lg fav-icon" style="color: #ff0000;"></i></span>
+     <span data-visiblity="hide" class="remove-toast"><i class="fa-solid fa-circle-check fa-beat fa-xl" style="color: #00ff04;"></i>&nbsp;&nbsp;Superhero <font color="red"><b>Removed</b></font> from &nbsp;<i class="fa-solid fa-heart fa-beat fa-lg fav-icon" style="color: #ff0000;"></i></span>
+     <!-- Linking External JS file -->
+     <script defer src="./Javascript/get-info.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+body{
+     overflow-x: hidden;
+}
+/* cards container */
+.cards-container{
+     justify-content: space-evenly;
+     padding-top: 4%;
+     padding-bottom: 3%;
+     flex-wrap: wrap;
+     overflow: hidden;
+     background-color: rgba(0, 0, 0, 0.6);
+}
+/* character information */
+.character-info .btn{ 
+     width: 100%;
+     background-color: rgba(0, 0, 0, 0.6);
+     border-bottom: 1px solid white;
+}
+.card{
+     background-color: rgba(0, 0, 0, 0.6);
+     height: 484px;
+     width: 250px;
+     margin: 40px 25px;
+     text-align: center;
+     border-top: 1px solid white;
+     border-radius: 10px;
+     gap: 5px;
+     z-index: 2;
+     backdrop-filter: blur(3px);
+     color: white;
+     z-index: 4 !important;
+}
+/* DOM inserted buttons */
+.buttonstyle{
+     background-color: transparent;
+     color: white;
+     border-bottom: 1px solid white;
+     font-size: 16px;
+     width: fit-content;
+     margin: auto;
+     cursor: pointer;
+}
+/* DOM inserted content styling */
+.card img{
+     border-radius: 10px 10px 0 0;
+}
+.id{
+     color: lightgreen;
+     font-weight: bold;
+}
+.name{
+     color: goldenrod;
+     font-size: 20px;
+     font-weight: bold;
+}
+.comics,.series,.stories {
+     gap: 5px;
+     color: violet;
+     font-weight: bold;
+}
+.remove-btn{
+     border-radius: 0 0 10px 10px;
+     background-color: rgba(0, 0, 0, 0.4);
+     border-bottom: 1px solid white;
+}
+/* no character present on favourite screen styling */
+.no-characters{
+     position: absolute;
+     top: 25%;
+     left:23%;
+     font-size: 40px;
+     color: white;
+     background-color: rgba(0, 0, 0, 0.8);
+}
+.no-hero-btn{
+     position: absolute;
+     top:40%;
+     left:37%;
+     font-size: 20px;
+     width: 450px;
+     height: 60px;
+     background-color: rgba(0, 0, 0, 0.8);
+     letter-spacing: 1px;
+}
+.pointer {cursor: pointer;}
+/* footer */
+.fixed-image {
+     position: fixed;
+     bottom: 5%;
+     right: 1% !important;
+     z-index: 3 !important;
+   }

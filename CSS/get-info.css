@@ -1,0 +1,95 @@
+body {
+     width: 100vw;
+     height: 100vh;
+}
+/* information container */
+.info {
+     justify-content: center;
+     align-items: center;
+     height: 100%;
+     width: 70%;
+}
+#info-container {
+     background-color: rgba(0, 0, 0, 0.6);
+     width: 100%;
+     height: auto;
+     gap: 15px;
+     padding: 15px 50px;
+     backdrop-filter: blur(2px);
+     border-radius: 10px;
+     color: white;
+}
+/* DOM inserted buttons */
+.buttonstyle{
+     background-color: transparent;
+     color: white;
+     border-bottom: 1px solid white;
+     font-size: 19px;
+     width: fit-content;
+     margin: auto;
+     cursor: pointer;
+}
+/* DOM inserted content styling */
+.hero-name {
+     color: goldenrod;
+     justify-content: center;
+     font-size: 30px;
+     font-weight: bold;
+}
+.id{
+     color: lightgreen;
+     font-weight: bold;
+     gap: 5px;
+}
+.pointer {cursor: pointer;}
+.hero-img-and-more-info {
+     gap: 30px;
+}
+.hero-img {
+     width: 20%;
+     height: auto;
+     min-width: 120px;
+}
+.more-info {
+     gap: 15px;
+     font-size: 1.3rem;
+}
+.comics,.series,.stories {
+     gap: 5px;
+     color: red;
+     font-weight: bold;
+}
+.hero-discription{
+     font-size: 1.1rem;
+     color: goldenrod;
+     font-weight: bold;
+}
+.hero-discription b{
+     font-size: 1.3rem;
+     font-weight: bold;
+}
+.bg-img {
+     z-index: -1;
+}
+/* media queries */
+@media screen and (max-width: 678px) {
+     .hero-img-and-more-info{
+          flex-direction: column;
+          align-items: center;
+     }
+     .hero-discription{
+          text-align: center;
+     }
+     #info-container{
+          width: 85%;
+     }
+     #landscapeImage{
+          width:100%
+     }
+     .info{
+          height: 100vh;
+     }
+     .more-info{
+          gap: 0px;
+     }
+}
