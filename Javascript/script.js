@@ -131,7 +131,7 @@ function addToFavourites() {
           favouritesArray.forEach((favourite) => {
                if(idOfCharacterToBeRemoveFromFavourites != favourite.id){
                     newFavouritesArray.push(favourite);
-               }
+               };
           });
           localStorage.setItem("favouriteCharacters",JSON.stringify(newFavouritesArray));
           localStorage.setItem("favouritesCharacterIDs", JSON.stringify([...favouritesCharacterIDs]));
